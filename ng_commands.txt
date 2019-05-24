@@ -1,0 +1,35 @@
+"ng Commands"
+
+ng help -- get all the commands
+
+   new -- create new angular project
+   generate -- to generate a new files as per project artifacts
+   run -- run app
+   serve -- as soon as make code changes, it will reflected
+   lint -- checks the code against the std. Uses "tslint.js" file for config.
+   build -- build the app and create the executable "dist" folder which we can directly put in web server.
+   test -- similar to junit. Config and Test cases are defined in karma.conf.js (config for test runner) and app.component.spec.ts ( test cases defined).
+   e2e -- end to end test. They are much more than unit test. Here we launch entire angular app and run tests related to this. Here chrome driver was used to perform selenium tests. Protractor is the tool used to perform selenium tests on angular code. All the code is present under "e2e" directory.
+
+
+"angular.json" is the file which decides what to happen when a user runs different ng commands. ( like build,serve,e2e etc..)
+
+
+"Project Structure"
+
+src-->app : This is where all angular code will be put ( components and modules).
+assets--> all the images.
+environments--> similar to properties files.
+
+tsconfig.json --> typescript will get converted into javascript. This file specifies the config for the same.
+package.json --> It is like a "pom.xml". All the package, tools , frameworks are mentioned in this file. We need to specify the dependencies in the file and npm (like mvn) will download.
+index.html, main.ts --> These two files are loaded up when we boot the application.
+polyfills.ts --> takes care of browser compatibilities.
+styles.css--> specifies the global application styles.
+test.js--> this file will be used when we use "ng test". This is the starting file to run unit tests.
+
+
+
+"Angular Component"
+
+
